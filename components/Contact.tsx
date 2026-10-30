@@ -73,8 +73,8 @@ export default function Contact() {
               transition={{ duration: 0.7, delay: 0.18 }}
               className="text-slate-400 font-light leading-relaxed text-[17px] mb-10"
             >
-              Whether you&apos;re working on next-generation orthopedic implants, autonomous robotic
-              systems, or somewhere in between — we&apos;d like to understand your modeling challenges.
+              Whether you&apos;re working on edge intelligence, condition monitoring, safety-critical
+              AI, or a modeling challenge of your own — we&apos;d like to hear about it.
             </motion.p>
 
             <motion.div
@@ -82,15 +82,44 @@ export default function Contact() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.26 }}
-              className="flex items-center gap-3 text-sm"
+              className="space-y-5"
             >
-              <Mail size={15} className="text-brand-400/60" />
-              <a
-                href="mailto:hello@fieldstoneanalytics.com"
-                className="interactive-link font-mono text-slate-400"
-              >
-                hello@fieldstoneanalytics.com
-              </a>
+              {/* General inbox */}
+              <div className="flex items-center gap-3 text-sm">
+                <Mail size={15} className="text-brand-400/60" />
+                <a
+                  href="mailto:hello@fieldstoneanalytics.com"
+                  className="interactive-link font-mono text-slate-400"
+                >
+                  hello@fieldstoneanalytics.com
+                </a>
+              </div>
+
+              {/* Founders */}
+              <div className="pl-[27px] space-y-2 text-[13px]">
+                <div className="flex flex-wrap items-baseline gap-x-2">
+                  <span className="text-slate-500">Randolph J. Ferlic, M.D.</span>
+                  <a href="mailto:randolphf@fieldstoneanalyticsllc.com" className="interactive-link font-mono text-slate-400">
+                    randolphf@fieldstoneanalyticsllc.com
+                  </a>
+                </div>
+                {/* TODO: confirm Kimberly's preferred contact email before publishing */}
+                <div className="flex flex-wrap items-baseline gap-x-2">
+                  <span className="text-slate-500">Kimberly K. Ferlic</span>
+                  <a href="mailto:kimberlyf@fieldstoneanalyticsllc.com" className="interactive-link font-mono text-slate-400">
+                    kimberlyf@fieldstoneanalyticsllc.com
+                  </a>
+                </div>
+              </div>
+
+              {/* Research & publications */}
+              <div className="pl-[27px] pt-1 flex flex-wrap gap-x-5 gap-y-2 text-[12px] font-mono">
+                <a href="/publications/" className="interactive-link text-brand-400/70">Publications</a>
+                <a href="https://zenodo.org/communities/spiral-domain-encoder-campaign/" className="interactive-link text-brand-400/70">Zenodo</a>
+                <a href="https://orcid.org/0009-0006-2367-5205" className="interactive-link text-brand-400/70">ORCID · RJF</a>
+                <a href="https://orcid.org/0009-0007-3012-3430" className="interactive-link text-brand-400/70">ORCID · KKF</a>
+                <a href="https://scholar.google.com/citations?user=NigHWo4AAAAJ" className="interactive-link text-brand-400/70">Scholar</a>
+              </div>
             </motion.div>
           </div>
 
@@ -161,7 +190,7 @@ export default function Contact() {
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
                     className="field-input w-full bg-white/[0.03] border border-white/[0.07] rounded-[2px] px-4 py-3 text-sm text-slate-300 placeholder-slate-700 focus:outline-none focus:border-brand-400/40 focus:bg-white/[0.04] resize-none"
-                    placeholder="Tell us about your modeling challenges..."
+                    placeholder="Tell us about your challenge..."
                   />
                 </div>
 

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import HeroCanvas from './HeroCanvas'
 
-const tags = ['Orthopedic Systems', 'Robotic Applications', 'Predictive Simulation', 'Data-Efficient AI']
+const tags = ['Edge & Ambient Intelligence', 'Condition Monitoring', 'AI Safety', 'Digital Twins']
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -86,7 +86,7 @@ export default function Hero() {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-400" />
           </span>
           <span className="text-[11px] font-mono text-brand-400/75 tracking-[0.18em] uppercase">
-            Digital Twin Platforms · Predictive Modeling
+            Deterministic Edge Intelligence · Patent Pending
           </span>
         </motion.div>
 
@@ -97,26 +97,37 @@ export default function Hero() {
           transition={{ duration: 0.85, delay: 0.55, ease: [0.25, 0.46, 0.45, 0.94] }}
           className="text-5xl sm:text-6xl md:text-[5.5rem] font-extralight tracking-tight text-slate-100 leading-[1.08] mb-7"
         >
-          Predictive Intelligence
+          One auditable byte.
           <br />
           <span
             className="font-light text-brand-400"
             style={{ textShadow: '0 0 60px rgba(28,135,215,0.35)' }}
           >
-            For Physical Systems
+            Every decision.
           </span>
         </motion.h1>
+
+        {/* Descriptive tagline */}
+        <motion.p
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.68 }}
+          className="max-w-2xl mx-auto text-lg sm:text-xl text-slate-300 font-light leading-relaxed mb-6"
+        >
+          A window of signal, distilled to one auditable byte —{' '}
+          <span className="text-brand-400 font-normal">the decision, not the data.</span>
+        </motion.p>
 
         {/* Subheadline */}
         <motion.p
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.75 }}
-          className="max-w-2xl mx-auto text-lg text-slate-400 font-light leading-relaxed mb-12"
+          transition={{ duration: 0.8, delay: 0.78 }}
+          className="max-w-2xl mx-auto text-base text-slate-400 font-light leading-relaxed mb-12"
         >
-          Fieldstone Analytics builds data-efficient digital twin platforms that model, simulate, and
-          optimize orthopedic and robotic systems — bringing predictive foresight to the most
-          demanding engineering challenges.
+          Fieldstone Analytics builds the frozen, deterministic single-token encoder behind it —
+          sub-milliwatt and bit-exact. Validated across more than a dozen sensing modalities, backed
+          by a substantial patent-pending portfolio, and documented in 68 open-access studies.
         </motion.p>
 
         {/* CTA buttons */}
@@ -131,7 +142,7 @@ export default function Hero() {
             className="button-primary group inline-flex items-center gap-2 px-9 py-3.5 text-sm font-medium text-[#050508] bg-brand-400 rounded-[2px] tracking-wide"
             style={{ boxShadow: '0 0 35px rgba(28,135,215,0.35), 0 8px 24px rgba(0,0,0,0.3)' }}
           >
-            <span>Explore Our Platform</span>
+            <span>Explore the Research</span>
             <ArrowRight size={15} className="button-arrow" />
           </a>
           <a

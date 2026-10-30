@@ -46,13 +46,10 @@ export default function About() {
           transition={{ duration: 0.9, delay: 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
           className="text-3xl md:text-4xl lg:text-[2.6rem] font-extralight text-slate-200 leading-[1.3] mb-10"
         >
-          &ldquo;The physical world generates{' '}
-          <span className="text-brand-400/80">enormous complexity.</span>
-          <br />
-          Our mission is to build the modeling infrastructure{' '}
+          &ldquo;Intelligence shouldn&rsquo;t require a data center, a black box, or your raw data.{' '}
           <br className="hidden md:block" />
-          that makes that complexity{' '}
-          <span className="text-brand-400/80">tractable.&rdquo;</span>
+          The right decision can fit in{' '}
+          <span className="text-brand-400/80">a single, auditable byte.&rdquo;</span>
         </motion.blockquote>
 
         <motion.p
@@ -62,10 +59,9 @@ export default function About() {
           transition={{ duration: 0.7, delay: 0.25 }}
           className="text-slate-400 font-light leading-relaxed text-lg max-w-2xl mx-auto mb-14"
         >
-          We believe the next generation of medical devices and robotic systems will be built with
-          simulation at their core. Fieldstone Analytics exists to make that future more accessible,
-          more efficient, and more reliable — giving engineers, researchers, and clinicians a
-          predictive lens into the systems they design, deploy, and operate.
+          Fieldstone Analytics exists to make trustworthy intelligence deployable at the edge —
+          deterministic, inspectable, efficient, and private — and to prove it in the open, one
+          pre-registered study at a time.
         </motion.p>
 
         {/* Brand mark */}
@@ -111,7 +107,7 @@ export default function About() {
               <span style={{ color: '#1D8FE4' }} className="ml-2">Analytics</span>
             </div>
             <div className="text-[11px] font-mono text-brand-400/40 tracking-widest mt-0.5 uppercase">
-              Intelligent Modeling Platforms
+              Deterministic Edge Intelligence
             </div>
           </div>
         </motion.div>

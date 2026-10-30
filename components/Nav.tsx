@@ -6,6 +6,7 @@ const links = [
   { label: 'What We Do', href: '#what-we-do' },
   { label: 'Capabilities', href: '#capabilities' },
   { label: 'Technology', href: '#technology' },
+  { label: 'Research', href: '/publications/' },
   { label: 'About', href: '#about' },
 ]
 

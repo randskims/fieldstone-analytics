@@ -415,7 +415,7 @@ export default function SystemVisual({ hoveredPillar }: Props) {
               fontFamily="ui-monospace,monospace" letterSpacing="2.5"
               fill={hoveredPillar === 'twins' ? 'rgba(28,135,215,0.85)' : 'rgba(28,135,215,0.50)'}
               style={{ transition: 'fill 0.65s ease' }}>
-              PHYSICAL SYSTEM
+              SENSOR STREAM
             </text>
 
             {/* Bottom: digital twin marker */}
@@ -423,7 +423,7 @@ export default function SystemVisual({ hoveredPillar }: Props) {
               fontFamily="ui-monospace,monospace" letterSpacing="2.5"
               fill={hoveredPillar === 'twins' ? 'rgba(28,135,215,0.85)' : 'rgba(28,135,215,0.50)'}
               style={{ transition: 'fill 0.65s ease' }}>
-              DIGITAL TWIN
+              ONE-BYTE TOKEN
             </text>
 
             {/* Center delta label */}
@@ -468,7 +468,7 @@ export default function SystemVisual({ hoveredPillar }: Props) {
         </div>
         <div className="absolute bottom-4 right-4 text-right pointer-events-none">
           <div className="text-[10px] font-mono text-brand-400/50 tracking-widest uppercase mb-0.5">
-            Predictive Output
+            Decision Output
           </div>
           <div className="text-[10px] font-mono text-slate-500">STATE_v3.1</div>
         </div>

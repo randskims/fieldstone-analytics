@@ -16,20 +16,20 @@ const up = (delay = 0) => ({
 const PILLARS: { key: PillarKey; value: string; label: string; hint: string }[] = [
   {
     key:   'twins',
-    value: 'Digital Twins',
-    label: 'Platform Foundation',
-    hint:  'Hover to illuminate the twin relationship',
+    value: 'Frozen Codebook',
+    label: 'The Encoder',
+    hint:  'Hover to illuminate the encoding',
   },
   {
     key:   'efficient',
-    value: 'Data-Efficient',
-    label: 'ML Architecture',
-    hint:  'Hover to activate data flow',
+    value: 'Sub-Milliwatt',
+    label: 'Edge-Native',
+    hint:  'Hover to activate the signal flow',
   },
   {
     key:   'predictive',
-    value: 'Predictive',
-    label: 'System Intelligence',
+    value: 'Auditable',
+    label: 'Deterministic',
     hint:  'Hover to energize the outer field',
   },
 ]
@@ -65,24 +65,23 @@ export default function WhatWeDo() {
             {/* Headline */}
             <motion.h2 {...up(0.08)}
               className="text-4xl md:text-5xl font-extralight text-slate-100 leading-[1.12] mb-7">
-              Where Simulation Meets
+              From Raw Signal to
               <br />
-              <span className="text-brand-400/90">Intelligent Prediction</span>
+              <span className="text-brand-400/90">Auditable Decision</span>
             </motion.h2>
 
             {/* Body paragraphs */}
             <motion.p {...up(0.16)}
               className="text-slate-400 text-[17px] font-light leading-relaxed mb-5">
-              We develop modeling platforms that bridge physical systems and predictive intelligence.
-              By fusing digital twin architecture with data-efficient machine learning, we create
-              simulation environments that accurately replicate the behavior of complex orthopedic
-              and robotic systems.
+              We build a frozen, deterministic single-token encoder that maps each window of sensor
+              signal through a class-discriminant subspace into a bounded codebook of at most 256
+              cells &mdash; turning a stream of raw data into one auditable byte.
             </motion.p>
 
             <motion.p {...up(0.22)} className="text-slate-400 leading-relaxed mb-12">
-              Our approach reduces the gap between model and reality — giving engineers and
-              researchers a reliable predictive lens before physical testing begins, enabling faster
-              iteration, higher-confidence decisions, and scalable insight from limited data.
+              The table entry is the decision &mdash; computed bit-exactly, in microseconds, at
+              sub-milliwatt power, on a commodity microcontroller. We ship the decision, not the
+              data: the raw waveform never has to leave the device.
             </motion.p>
 
             {/* Interactive pillars */}

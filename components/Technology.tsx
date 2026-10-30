@@ -3,28 +3,28 @@ import { motion } from 'framer-motion'
 
 const pillars = [
   {
-    code: 'PHYS_INF',
-    title: 'Physics-Informed Learning',
-    body: 'Known physical laws are embedded directly into model architectures as soft or hard constraints — reducing the solution space and enabling accurate generalization with far less training data.',
-    detail: 'Governing equations as inductive bias',
+    code: 'LDA_PCA',
+    title: 'Class-Discriminant Subspace',
+    body: 'Features are projected through a supervised Fisher-discriminant and PCA subspace that places the decision axis — the one label-hungry step, done once, offline.',
+    detail: 'Fisher ⊕ PCA projection',
   },
   {
-    code: 'SURR_MDL',
-    title: 'Surrogate Modeling',
-    body: 'High-fidelity simulations are computationally expensive. Our surrogate models capture the input-output behavior of complex systems at a fraction of the cost, enabling rapid design-space exploration.',
-    detail: 'Full-order → reduced-order fidelity mapping',
+    code: 'CODEBOOK',
+    title: 'Frozen ≤256-Cell Codebook',
+    body: 'A k-means codebook quantizes that subspace into at most 256 cells. Each window of signal maps to its nearest centroid — one 8-bit token, nothing more.',
+    detail: 'Vector quantization → one byte',
   },
   {
-    code: 'STATE_EST',
-    title: 'Real-Time State Estimation',
-    body: 'Kalman filtering, Bayesian inference, and learned state estimators continuously update digital twin states as new sensor measurements arrive — keeping models synchronized with physical reality.',
-    detail: 'Continuous measurement assimilation',
+    code: 'LOOKUP',
+    title: 'Bit-Exact Lookup',
+    body: 'The token indexes a soft per-cell lookup table. The table entry is the decision — deterministic, reproducible bit-for-bit, and computed in microseconds.',
+    detail: '≤256-entry decision table',
   },
   {
-    code: 'MULTI_FID',
-    title: 'Multi-Fidelity Simulation',
-    body: 'We combine low-cost approximate models with high-fidelity simulations in a principled framework — intelligently allocating computational resources where accuracy demands them most.',
-    detail: 'Hierarchical model fusion',
+    code: 'TIER0',
+    title: 'On-Device Tier-0 Gate',
+    body: 'The same frozen token runs as an always-on competence monitor at sub-milliwatt power on a commodity MCU, flagging inputs that fall outside its trained envelope.',
+    detail: 'Sub-mW on silicon, measured',
   },
 ]
 
@@ -71,9 +71,9 @@ export default function Technology() {
             transition={{ duration: 0.7, delay: 0.08 }}
             className="text-4xl md:text-5xl font-extralight text-slate-100 leading-[1.12] mb-5"
           >
-            Simulation, AI, and
+            From Signal to Decision,
             <br />
-            <span className="text-brand-400/85">Data Working Together</span>
+            <span className="text-brand-400/85">in Four Steps</span>
           </motion.h2>
 
           <motion.p
@@ -83,8 +83,8 @@ export default function Technology() {
             transition={{ duration: 0.6, delay: 0.18 }}
             className="text-slate-400 font-light leading-relaxed text-[17px]"
           >
-            Our platform methodology combines four complementary technical pillars —
-            each designed to maximize predictive accuracy while minimizing data and compute requirements.
+            A frozen pipeline: an offline, label-driven build produces a closed-form runtime that
+            computes the decision bit-exactly at the edge — no training at inference, no floating-point drift, no black box.
           </motion.p>
         </div>
 

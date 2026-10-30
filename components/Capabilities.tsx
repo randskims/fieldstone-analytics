@@ -1,41 +1,41 @@
 'use client'
 import { motion } from 'framer-motion'
-import { Network, TrendingUp, Cpu, Activity, Bot } from 'lucide-react'
+import { Binary, Zap, ShieldCheck, Activity, Layers } from 'lucide-react'
 
 const capabilities = [
   {
-    Icon: Network,
+    Icon: Binary,
     label: '01',
-    title: 'Digital Twin Platforms',
-    body: 'High-fidelity virtual replicas of physical systems that mirror mechanical behavior in real time. Our architectures capture geometry, material properties, and dynamics that define real-world performance.',
+    title: 'The Decision Token',
+    body: 'A window of signal → a class-discriminant subspace → a ≤256-cell codebook → one 8-bit token. The lookup table is the decision, computed bit-exactly in microseconds.',
     accent: '#38bdf8',
   },
   {
-    Icon: TrendingUp,
+    Icon: Zap,
     label: '02',
-    title: 'Predictive Simulation',
-    body: 'Physics-informed models that forecast system behavior before physical testing begins. Domain knowledge embedded directly into model architectures enables accurate predictions in data-sparse regimes.',
+    title: 'Radical Efficiency',
+    body: '10–60× less inference energy and ~150–4,000× fewer bytes than conventional pipelines. Bandwidth and power stop being the constraint on where intelligence can live.',
     accent: '#38bdf8',
   },
   {
-    Icon: Cpu,
+    Icon: ShieldCheck,
     label: '03',
-    title: 'Data-Efficient Modeling',
-    body: 'ML frameworks engineered to extract maximum signal from minimal experimental data — essential in orthopedic and robotic domains where labeled data is expensive, rare, or difficult to obtain.',
+    title: 'Auditable & Deterministic',
+    body: 'The entire decision function is a lookup table of at most 256 entries — inspectable, reproducible bit-for-bit, and built for regulated and safety-critical use (EU AI Act, IEC 61508).',
     accent: '#818cf8',
   },
   {
     Icon: Activity,
     label: '04',
-    title: 'Orthopedic Applications',
-    body: 'Simulation platforms purpose-built for implant design, biomechanical modeling, surgical planning, surgical execution, and longitudinal assessments — translating clinical complexity into tractable, high-confidence computational models.',
+    title: 'Always-On Safety Interlock',
+    body: 'The same frozen token runs as an independent Tier-0 competence monitor — a deterministic second channel that flags when inputs drift outside the commissioned envelope.',
     accent: '#818cf8',
   },
   {
-    Icon: Bot,
+    Icon: Layers,
     label: '05',
-    title: 'Robotic Applications',
-    body: 'Predictive models for robotic motion, load estimation, and performance optimization. Simulate edge cases, stress test designs, and validate behavior before physical deployment.',
+    title: 'Cross-Modality Reach',
+    body: 'One primitive, validated across more than a dozen sensing modalities — vibration, ECG, acoustic, radar, RF, wearable PPG, quantum readout, and agentic-AI traces.',
     accent: '#38bdf8',
   },
 ]
@@ -86,9 +86,9 @@ export default function Capabilities() {
             transition={{ duration: 0.7, delay: 0.08 }}
             className="text-4xl md:text-5xl font-extralight text-slate-100 leading-tight mb-4"
           >
-            Built for Precision,
+            Built for the Edge,
             <br />
-            <span className="text-brand-400/85">Designed for Complexity</span>
+            <span className="text-brand-400/85">Designed for Trust</span>
           </motion.h2>
 
           <motion.p
@@ -98,7 +98,7 @@ export default function Capabilities() {
             transition={{ duration: 0.6, delay: 0.18 }}
             className="max-w-xl mx-auto text-slate-400 font-light leading-relaxed"
           >
-            Five interconnected platform capabilities — from twin architecture to domain-specific applications.
+            Five composable capabilities — from the core encoder to always-on safety and cross-modality reach.
           </motion.p>
         </div>
 
@@ -157,15 +157,15 @@ export default function Capabilities() {
             </motion.div>
           ))}
 
-          {/* Final empty filler to keep grid even on lg */}
+          {/* Final card — composition principle */}
           <motion.div
             variants={cardVariants}
             className="hidden lg:block bg-[#0d0d16]/30 border border-white/[0.03] rounded-[3px] p-8"
           >
             <div className="h-full flex flex-col justify-end">
-              <div className="text-[11px] font-mono text-slate-700 tracking-widest uppercase mb-2">Expanding</div>
+              <div className="text-[11px] font-mono text-slate-700 tracking-widest uppercase mb-2">Composable</div>
               <p className="text-sm text-slate-700 font-light leading-relaxed">
-                Our platform capabilities are actively expanding to new application domains.
+                The platform composes across orthogonal axes — capabilities stack without interference, always at the cheapest-sufficient frontier.
               </p>
             </div>
           </motion.div>

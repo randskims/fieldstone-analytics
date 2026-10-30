@@ -3,32 +3,32 @@ import { motion } from 'framer-motion'
 
 const benefits = [
   {
-    heading: 'Accelerate Development',
-    sub: 'Design Cycles',
-    body: 'Replace costly physical iteration with high-confidence simulation. Move from concept to validated design in a fraction of the time.',
+    heading: 'Radically Cheaper',
+    sub: 'Economics',
+    body: '10–60× less inference energy and ~150–4,000× fewer bytes than conventional pipelines. Bandwidth and power stop constraining where intelligence can live.',
     stat: '↓',
-    statLabel: 'Iteration Time',
+    statLabel: 'Energy per Decision',
   },
   {
-    heading: 'Decide Earlier',
-    sub: 'Predictive Foresight',
-    body: 'Make high-stakes design decisions at the concept stage — not after expensive tooling, testing, or deployment.',
-    stat: '↑',
-    statLabel: 'Decision Confidence',
+    heading: 'Auditable by Design',
+    sub: 'Trust',
+    body: 'The whole decision is a ≤256-entry table you can inspect and certify. No black box — reproducible bit-for-bit, every time.',
+    stat: '=',
+    statLabel: 'Inspectable Decisions',
   },
   {
-    heading: 'Do More With Less',
-    sub: 'Data Efficiency',
-    body: 'Data-efficient architectures deliver accurate predictions without requiring large experimental datasets — critical in clinical and robotic environments.',
-    stat: '×',
-    statLabel: 'Signal per Sample',
+    heading: 'Private by Construction',
+    sub: 'Privacy',
+    body: 'The raw waveform never leaves the device — only the byte does. Confidentiality is a property of the architecture, not a policy bolted on.',
+    stat: '∅',
+    statLabel: 'Raw Data Off-Device',
   },
   {
-    heading: 'Scale Intelligently',
-    sub: 'Platform Growth',
-    body: 'Platforms designed to grow alongside your system — from early-stage prototype modeling to full-scale deployment and real-time state tracking.',
-    stat: '∞',
-    statLabel: 'System Scalability',
+    heading: 'Safe at the Edge',
+    sub: 'Safety',
+    body: 'An always-on competence interlock — an independent, deterministic channel that flags when inputs leave the trained envelope.',
+    stat: '△',
+    statLabel: 'Out-of-Envelope Flags',
   },
 ]
 
@@ -81,7 +81,7 @@ export default function WhyItMatters() {
           >
             The Case for
             <br />
-            <span className="text-indigo-400/80">Predictive Modeling</span>
+            <span className="text-indigo-400/80">the Decision Token</span>
           </motion.h2>
         </div>
 

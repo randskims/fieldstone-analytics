@@ -10,11 +10,11 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Fieldstone Analytics | Predictive Intelligence for Physical Systems',
+  title: 'Fieldstone Analytics | Deterministic Edge Intelligence',
   description:
-    'Fieldstone Analytics builds data-efficient digital twin platforms that model, simulate, and optimize orthopedic and robotic systems.',
+    'A window of signal, distilled to one auditable byte — the decision, not the data. Fieldstone Analytics builds a frozen, deterministic single-token encoder for sub-milliwatt, auditable edge intelligence, validated across more than a dozen sensing modalities.',
   keywords:
-    'digital twins, predictive modeling, orthopedic simulation, robotics, data-efficient machine learning',
+    'edge AI, decision token, deterministic inference, auditable AI, single-token encoder, condition monitoring, digital twin, AI safety, TinyML, sub-milliwatt, predictive maintenance',
   icons: {
     icon: '/icon.svg',
     shortcut: '/icon.svg',
