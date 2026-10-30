@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compression and Energy-Efficient Archival of Spiral-Domain Encoded Time-Series Trajectories: Discretization, Codec Composition, and Deployment-Scale Storage Economics — Fieldstone Analytics</title>
+<meta name="description" content="v2 update (2026-06-01): Reproducibility ZIP added back to the latest version alongside the manuscript files, so that downloading from the concept DOI gives all materials in one place rather than requiring navigation to v1. This revised deposit contains the Paper 4 manuscript (PDF and DOCX) along wit">
+<meta name="author" content="Randolph James Ferlic; Kimberly Kate Ferlic">
+<link rel="canonical" href="https://fieldstoneanalytics.com/publications/compression-and-energy-efficient-archival-of-spiral-domain-encoded.html">
+<meta name="citation_title" content="Compression and Energy-Efficient Archival of Spiral-Domain Encoded Time-Series Trajectories: Discretization, Codec Composition, and Deployment-Scale Storage Economics">
+<meta name="citation_author" content="Randolph James Ferlic">
+<meta name="citation_author" content="Kimberly Kate Ferlic">
+<meta name="citation_publication_date" content="2026/06/01">
+<meta name="citation_doi" content="10.5281/zenodo.20219078">
+<meta name="citation_abstract_html_url" content="https://fieldstoneanalytics.com/publications/compression-and-energy-efficient-archival-of-spiral-domain-encoded.html">
+<meta name="citation_pdf_url" content="https://zenodo.org/records/20500799/files/Manuscript_Paper4_arXiv.pdf">
+<meta name="citation_keywords" content="time-series compression; trajectory encoding; discretization; lossless codec composition; delta-encoding; run-length encoding; storage scaling; industrial digital twin; IoT data archival; MQTT; deployment-realism validation; pre-registration empirical methodology; spiral-domain encoding">
+<meta property="og:type" content="article"><meta property="og:title" content="Compression and Energy-Efficient Archival of Spiral-Domain Encoded Time-Series Trajectories: Discretization, Codec Composition, and Deployment-Scale Storage Economics">
+<style>*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1a1a1a;background:#fff;line-height:1.6}
+.wrap{max-width:820px;margin:0 auto;padding:48px 20px 80px}a{color:#2A5A8C}
+.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#2A5A8C;font-weight:700;margin:0 0 6px}
+.back{font-size:.9rem;text-decoration:none;display:inline-block;margin-bottom:22px}
+h1{font-size:1.7rem;line-height:1.2;color:#1F3A5F;font-weight:800;margin:0 0 12px;letter-spacing:-.01em}
+.meta{color:#5b6670;font-size:.95rem;margin:0 0 20px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 28px}
+.btn{display:inline-block;padding:9px 16px;border-radius:7px;text-decoration:none;font-weight:600;font-size:.9rem}
+.btn.p{background:#1F3A5F;color:#fff}.btn.s{background:#eef2f7;color:#1F3A5F}
+h2{font-size:1rem;color:#1F3A5F;margin:28px 0 8px;text-transform:uppercase;letter-spacing:.04em;font-size:.82rem}
+.abs{color:#2c3540;font-size:1rem;white-space:pre-wrap}
+.kw{margin-top:24px;display:flex;flex-wrap:wrap;gap:7px}
+.kw span{background:#f1f4f8;color:#44525f;font-size:.78rem;padding:3px 9px;border-radius:12px}
+footer{margin-top:44px;padding-top:20px;border-top:1px solid #e4e8ee;color:#5b6670;font-size:.86rem}
+@media(max-width:560px){.wrap{padding:32px 16px 60px}h1{font-size:1.4rem}}</style></head>
+<body><div class="wrap">
+<p class="eyebrow">Fieldstone Analytics</p>
+<a class="back" href="index.html">&larr; All publications</a>
+<h1>Compression and Energy-Efficient Archival of Spiral-Domain Encoded Time-Series Trajectories: Discretization, Codec Composition, and Deployment-Scale Storage Economics</h1>
+<p class="meta">Randolph James Ferlic &amp; Kimberly Kate Ferlic &middot; Preprint &middot; Jun 1, 2026 &middot; Zenodo</p>
+<div class="btns"><a class="btn p" href="https://zenodo.org/records/20500799/files/Manuscript_Paper4_arXiv.pdf">Download PDF</a><a class="btn s" href="https://zenodo.org/records/20500799">View on Zenodo</a><a class="btn s" href="https://doi.org/10.5281/zenodo.20219078">doi.org/zenodo.20219078</a></div>
+<h2>Abstract</h2>
+<div class="abs">v2 update (2026-06-01): Reproducibility ZIP added back to the latest version alongside the manuscript files, so that downloading from the concept DOI gives all materials in one place rather than requiring navigation to v1. This revised deposit contains the Paper 4 manuscript (PDF and DOCX) along with the supplementary reproducibility archive. The manuscript files were added in this revised version of the deposit; the supplementary ZIP file remains unchanged from the original deposit. Manuscript targets IEEE Transactions on Storage (under preparation). Coverage. 9 pre-registered studies (Studies 54-62, Phase IX + Phase X of the spiral-domain encoder validation campaign). 27 hypotheses, 17 SUPPORTED (63%), 10 honest bounded negatives substantively interpreted. Substantive findings. 4x structural compression via discretization; 46.75x cumulative compression with delta-encoding + zstd-9; 71.72x maximum with zstd-22; 33.02x for 90%-idle daily-living monitoring; linear storage scaling R-squared &gt; 0.999 across four duration tiers (1 min, 1 hour, 24 hours, 1 year); 1,000-device smart-factory deployment fits 3 TB/year approximately $830/year AWS S3 budget. Contents. Manuscript (PDF and DOCX of the paper itself); supplementary reproducibility archive containing: README.md (submission-package map and reproduction instructions); preregistrations/ (frozen pre-registration .md documents with literal-threshold decision rules); reports/ (per-study .md verdict reports against frozen rules + phase summaries); runners/ (deterministic Python runners under PYTHONHASHSEED=0); raw_data/ (per-study CSV outputs and JSON verdict blocks); figures/ (manuscript figures at 300 DPI + figure-build script); code/ (encoder source code). Reproducibility. Full validation pipeline is reproducible end-to-end under PYTHONHASHSEED=0 on a standard Python 3.9+ installation with NumPy 2.0+, SciPy, and the python-zstandard binding. Reference machine: Apple Silicon arm64 (M-series), macOS 14. See README.md for per-study run commands. Methodological discipline. Every hypothesis was pre-registered with externally anchored decision rules frozen prior to runner execution. Zero post-hoc threshold adjustments were applied. Honest bounded negatives are interpreted substantively rather than discarded. Related companion archives. Paper 1 (10.5281/zenodo.20129137), Paper 2 (10.5281/zenodo.20138786), Paper 3 (10.5281/zenodo.20139171), and the corresponding Papers 5, 6, 7, 8 archives in this same Zenodo collection (Paper 8 at 10.5281/zenodo.20466035).</div>
+<div class="kw"><span>time-series compression</span><span>trajectory encoding</span><span>discretization</span><span>lossless codec composition</span><span>delta-encoding</span><span>run-length encoding</span><span>storage scaling</span><span>industrial digital twin</span><span>IoT data archival</span><span>MQTT</span><span>deployment-realism validation</span><span>pre-registration empirical methodology</span><span>spiral-domain encoding</span></div>
+<footer>Open access &middot; CC-BY 4.0 &middot; archived on Zenodo with DOI <a href="https://doi.org/10.5281/zenodo.20219078">10.5281/zenodo.20219078</a>. &copy; 2026 Fieldstone Analytics, LLC and the authors.</footer>
+</div></body></html>
