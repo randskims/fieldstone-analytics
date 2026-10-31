@@ -5,14 +5,14 @@ const benefits = [
   {
     heading: 'Radically Cheaper',
     sub: 'Economics',
-    body: '10–60× less inference energy and ~150–4,000× fewer bytes than conventional pipelines. Bandwidth and power stop constraining where intelligence can live.',
+    body: 'A full decision for a small fraction of the energy and data footprint a conventional pipeline needs — so inference runs on a commodity microcontroller, not in a data center. Cost and power stop deciding where intelligence can live.',
     stat: '↓',
     statLabel: 'Energy per Decision',
   },
   {
     heading: 'Auditable by Design',
     sub: 'Trust',
-    body: 'The whole decision is a ≤256-entry table you can inspect and certify. No black box — reproducible bit-for-bit, every time.',
+    body: 'The whole decision is a ≤256-entry table you can inspect and verify. No black box — reproducible bit-for-bit, every time.',
     stat: '=',
     statLabel: 'Inspectable Decisions',
   },
