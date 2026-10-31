@@ -103,7 +103,6 @@ export default function Contact() {
                     randolphf@fieldstoneanalyticsllc.com
                   </a>
                 </div>
-                {/* TODO: confirm Kimberly's preferred contact email before publishing */}
                 <div className="flex flex-wrap items-baseline gap-x-2">
                   <span className="text-slate-500">Kimberly K. Ferlic</span>
                   <a href="mailto:kimberlyf@fieldstoneanalyticsllc.com" className="interactive-link font-mono text-slate-400">
@@ -118,7 +117,8 @@ export default function Contact() {
                 <a href="https://zenodo.org/communities/spiral-domain-encoder-campaign/" className="interactive-link text-brand-400/70">Zenodo</a>
                 <a href="https://orcid.org/0009-0006-2367-5205" className="interactive-link text-brand-400/70">ORCID · RJF</a>
                 <a href="https://orcid.org/0009-0007-3012-3430" className="interactive-link text-brand-400/70">ORCID · KKF</a>
-                <a href="https://scholar.google.com/citations?user=NigHWo4AAAAJ" className="interactive-link text-brand-400/70">Scholar</a>
+                <a href="https://scholar.google.com/citations?user=_gk_V5oAAAAJ" className="interactive-link text-brand-400/70">Scholar · RJF</a>
+                <a href="https://scholar.google.com/citations?user=NigHWo4AAAAJ" className="interactive-link text-brand-400/70">Scholar · KKF</a>
               </div>
             </motion.div>
           </div>
