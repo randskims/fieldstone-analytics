@@ -88,10 +88,10 @@ export default function Contact() {
               <div className="flex items-center gap-3 text-sm">
                 <Mail size={15} className="text-brand-400/60" />
                 <a
-                  href="mailto:hello@fieldstoneanalytics.com"
+                  href="mailto:support@fieldstoneanalyticsllc.com"
                   className="interactive-link font-mono text-slate-400"
                 >
-                  hello@fieldstoneanalytics.com
+                  support@fieldstoneanalyticsllc.com
                 </a>
               </div>
 
