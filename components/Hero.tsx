@@ -86,7 +86,7 @@ export default function Hero() {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-400" />
           </span>
           <span className="text-[11px] font-mono text-brand-400/75 tracking-[0.18em] uppercase">
-            Deterministic Edge Intelligence · Patent Pending
+            Deterministic Edge Intelligence
           </span>
         </motion.div>
 
@@ -138,7 +138,7 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
         >
           <a
-            href="#what-we-do"
+            href="/publications/"
             className="button-primary group inline-flex items-center gap-2 px-9 py-3.5 text-sm font-medium text-[#050508] bg-brand-400 rounded-[2px] tracking-wide"
             style={{ boxShadow: '0 0 35px rgba(28,135,215,0.35), 0 8px 24px rgba(0,0,0,0.3)' }}
           >
@@ -176,7 +176,6 @@ export default function Hero() {
         transition={{ delay: 1.6, duration: 0.8 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
-        <span className="text-[10px] font-mono text-slate-700 tracking-[0.25em] uppercase">Scroll</span>
         <div className="w-px h-8 bg-gradient-to-b from-slate-700 to-transparent" />
       </motion.div>
     </section>

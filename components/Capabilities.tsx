@@ -13,7 +13,7 @@ const capabilities = [
   {
     Icon: Zap,
     label: '02',
-    title: 'Radical Efficiency',
+    title: 'Extreme Efficiency',
     body: '10–60× less inference energy and ~150–4,000× fewer bytes than conventional pipelines. Bandwidth and power stop being the constraint on where intelligence can live.',
     accent: '#38bdf8',
   },
