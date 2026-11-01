@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       'A frozen, deterministic single-token encoder — one auditable byte per decision. Sub-milliwatt, bit-exact edge AI, characterized across more than a dozen sensing modalities in 68 open-access studies.',
     images: [
       {
-        url: '/og-image.png?v=2',
+        url: '/og-image.png?v=3',
         width: 1200,
         height: 630,
         alt: 'Fieldstone Analytics — One auditable byte. Every decision.',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: 'Fieldstone Analytics | Deterministic Edge Intelligence',
     description:
       'A frozen, deterministic single-token encoder — one auditable byte per decision. Sub-milliwatt, bit-exact edge AI.',
-    images: ['/og-image.png?v=2'],
+    images: ['/og-image.png?v=3'],
   },
 }
 
