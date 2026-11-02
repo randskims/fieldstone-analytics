@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: 'Fieldstone Analytics',
     title: 'Fieldstone Analytics | Deterministic Edge Intelligence',
     description:
-      'A frozen, deterministic single-token encoder — one auditable byte per decision. Sub-milliwatt, bit-exact edge AI, characterized across more than a dozen sensing modalities in 68 open-access studies.',
+      'A frozen, deterministic single-token encoder — one auditable byte per decision. Sub-milliwatt, bit-exact edge AI, characterized across more than a dozen sensing modalities in 69 open-access studies.',
     images: [
       {
         url: '/og-image.png?v=4',
@@ -51,6 +51,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={inter.variable}>
       <body>
         <MotionProvider>{children}</MotionProvider>
+        {/* Cloudflare Web Analytics */}
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "f9e3f9b71aa74d20a35c2cded8bcc99a"}'
+        ></script>
       </body>
     </html>
   )
