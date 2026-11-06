@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: 'Fieldstone Analytics',
     title: 'Fieldstone Analytics | Deterministic Edge Intelligence',
     description:
-      'A frozen, deterministic single-token encoder — one auditable byte per decision. Sub-milliwatt, bit-exact edge AI, characterized across more than a dozen sensing modalities in 70 open-access studies.',
+      'A frozen, deterministic single-token encoder — one auditable byte per decision. Sub-milliwatt, bit-exact edge AI, characterized across more than a dozen sensing modalities in 71 open-access studies.',
     images: [
       {
         url: '/og-image.png?v=4',
